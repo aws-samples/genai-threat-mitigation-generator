@@ -1,0 +1,5 @@
+pytest==6.2.5
+black
+-r lambda/shared/requirements.txt
+-r lambda/document-loader/requirements.txt
+-r lambda/vector-store-configurator/requirements.txt

@@ -1,0 +1,8 @@
+{
+  "database-name": "vectorstore",
+  "webapp-cognito-domain-prefix": "threat-model",
+  "acknowledged-issue-numbers": [
+    31716,
+    31716
+  ]
+}

@@ -1,0 +1,8 @@
+psycopg
+psycopg-binary
+langchain_postgres
+langchain_community
+langchain_text_splitters
+langchain_aws
+langchain
+pgvector
