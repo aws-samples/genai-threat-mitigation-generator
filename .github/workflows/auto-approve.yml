@@ -1,17 +1,21 @@
 name: auto-approve
 on:
   pull_request: {}
+permissions:
+  pull-requests: write
+  contents: write
 jobs:
   approve:
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
-      contents: write
     if: contains(github.event.pull_request.labels.*.name, 'auto-approve') && github.event.pull_request.user.login == 'dependabot[bot]'
     steps:
-      - uses: hmarr/auto-approve-action@v2.2.1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: alexwilson/enable-github-automerge-action@main
-        with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Approve a PR
+        run: gh pr review --approve "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Automerge
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
