@@ -17,7 +17,8 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: lts
+          cache: 'npm'
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
