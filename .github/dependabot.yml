@@ -10,6 +10,14 @@ updates:
       - "auto-approve"
       - "dependencies"
       - "dependencies[npm]"
+    groups:
+      dev:
+        dependency-type: "development"
+      prod:
+        dependency-type: "production"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: "pip"
     directory: "/"
@@ -21,3 +29,11 @@ updates:
       - "auto-approve"
       - "dependencies"
       - "dependencies[pip]"
+    groups:
+      dev:
+        dependency-type: "development"
+      prod:
+        dependency-type: "production"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
