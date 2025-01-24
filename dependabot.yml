@@ -1,0 +1,21 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/webapp"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore: dependabot[npm] "
+    labels:
+      - "auto-approve"
+      - "dependabot-npm"
+
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore: dependabot[pip]"
+    labels:
+      - "auto-approve"
+      - "dependabot-pip"
