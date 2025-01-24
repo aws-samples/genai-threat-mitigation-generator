@@ -8,7 +8,8 @@ updates:
       prefix: "chore: dependabot[npm] "
     labels:
       - "auto-approve"
-      - "dependabot-npm"
+      - "dependencies"
+      - "dependencies[npm]"
 
   - package-ecosystem: "pip"
     directory: "/"
@@ -18,4 +19,5 @@ updates:
       prefix: "chore: dependabot[pip]"
     labels:
       - "auto-approve"
-      - "dependabot-pip"
+      - "dependencies"
+      - "dependencies[pip]"
