@@ -11,9 +11,6 @@ jobs:
       - uses: hmarr/auto-approve-action@v2.2.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Enable automerge on dependabot PRs
-        uses: daneden/enable-automerge-action@v1
+      - uses: alexwilson/enable-github-automerge-action@main
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          allowed-author: "dependabot[bot]"
-          merge-method: MERGE
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
