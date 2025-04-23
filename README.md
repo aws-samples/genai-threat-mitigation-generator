@@ -29,10 +29,12 @@ Set following context keys in the `cdk.json` file
 - Activate virtual env with `source .venv/bin/activate`
 - Install python dependencies with `pip install -r requirements.txt`
 - Install docker-compatible engine, `finch` is recommended, you can use `CDK_DOCKER=finch` environment variable to configure.
+- Install finch in your local machine and execute command "finch vm init" to initialize environment.
     - If there is any issue with finch then please make use of docker:  you can use `CDK_DOCKER=docker` environment variable to configure. By default, it uses docker only.
 - enable AWS Bedrock `anthropic.claude-3-sonnet-20240229-v1:0` and `amazon.titan-embed-text-v2:0` in deployment region
 - export AWS_REGION variable. 
 - Bootstrap your environment for use with CDK by following URL: https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping-env.html
+- Please make sure to use node version 22 before proceeding with deployment. Uninstall node 23 version from local machine and set path for version 22.
 - Deploy stack with `cdk deploy --all`
 - export webapp environment with command `aws cloudformation describe-stacks --stack-name ThreatMitigationStack  | jq '.Stacks[0].Outputs[] | select(.OutputKey == "WebAppEnvironment") | .OutputValue | fromjson | to_entries[] | [.key,.value] | join("=")' --raw-output > webapp/.env`
 - Deploy ThreatMitigationStack again with `cdk deploy ThreatMitigationStack`
