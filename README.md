@@ -29,7 +29,7 @@ Set following context keys in the `cdk.json` file
 - Activate virtual env with `source .venv/bin/activate`
 - Install python dependencies with `pip install -r requirements.txt`
 - Install docker-compatible engine, `finch` is recommended, you can use `CDK_DOCKER=finch` environment variable to configure.
-- Install finch in your local machine and execute command "finch vm init" to initialize environment.
+- Install finch in your local machine and execute command `finch vm init` to initialize environment.
     - If there is any issue with finch then please make use of docker:  you can use `CDK_DOCKER=docker` environment variable to configure. By default, it uses docker only.
 - enable AWS Bedrock `anthropic.claude-3-sonnet-20240229-v1:0` and `amazon.titan-embed-text-v2:0` in deployment region
 - export AWS_REGION variable. 
@@ -38,6 +38,8 @@ Set following context keys in the `cdk.json` file
 - Deploy stack with `cdk deploy --all`
 - export webapp environment with command `aws cloudformation describe-stacks --stack-name ThreatMitigationStack  | jq '.Stacks[0].Outputs[] | select(.OutputKey == "WebAppEnvironment") | .OutputValue | fromjson | to_entries[] | [.key,.value] | join("=")' --raw-output > webapp/.env`
 - Deploy ThreatMitigationStack again with `cdk deploy ThreatMitigationStack`
+  - If CDK deployment is generating some issues then please try to use localbuild as well:
+    - `cdk deploy ThreatMitigationStack -c webapp-enforce-local-bundling=true`
 - Place pdf documents in bucket (check output `ThreatMitigationStack.VectorStoreDocumentsBucket`)
   - These documents will be used as knowledge base so please add require documents as per your requirement and expected output can also be changed by modifying lambda prompts.
 - Try in browser using output `ThreatMitigationStack.WebAppUrl`
