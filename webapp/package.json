@@ -14,12 +14,12 @@
     "dependencies": {
         "@cloudscape-design/chat-components": "^1.0.51",
         "@cloudscape-design/code-view": "^3.0.64",
-        "@cloudscape-design/components": "^3.0.992",
+        "@cloudscape-design/components": "^3.0.1001",
         "@cloudscape-design/global-styles": "^1.0.44",
-        "aws-amplify": "^6.15.0",
+        "aws-amplify": "^6.15.1",
         "aws4fetch": "^1.0.20",
         "jspdf": "^3.0.1",
-        "markdown-to-jsx": "^7.7.7",
+        "markdown-to-jsx": "^7.7.8",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.30.1"
