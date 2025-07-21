@@ -13,13 +13,13 @@
     },
     "dependencies": {
         "@cloudscape-design/chat-components": "^1.0.55",
-        "@cloudscape-design/code-view": "^3.0.66",
-        "@cloudscape-design/components": "^3.0.1025",
+        "@cloudscape-design/code-view": "^3.0.67",
+        "@cloudscape-design/components": "^3.0.1027",
         "@cloudscape-design/global-styles": "^1.0.44",
         "aws-amplify": "^6.15.3",
         "aws4fetch": "^1.0.20",
         "jspdf": "^3.0.1",
-        "markdown-to-jsx": "^7.7.10",
+        "markdown-to-jsx": "^7.7.12",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.30.1"
