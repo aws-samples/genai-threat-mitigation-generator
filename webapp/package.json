@@ -12,13 +12,13 @@
         "test": "vitest"
     },
     "dependencies": {
-        "@cloudscape-design/chat-components": "^1.0.91",
-        "@cloudscape-design/code-view": "^3.0.98",
-        "@cloudscape-design/components": "^3.0.1183",
+        "@cloudscape-design/chat-components": "^1.0.93",
+        "@cloudscape-design/code-view": "^3.0.99",
+        "@cloudscape-design/components": "^3.0.1189",
         "@cloudscape-design/global-styles": "^1.0.50",
         "aws-amplify": "^6.16.0",
         "aws4fetch": "^1.0.20",
-        "jspdf": "^4.0.0",
+        "jspdf": "^4.1.0",
         "markdown-to-jsx": "^7.7.17",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
