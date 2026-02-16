@@ -14,7 +14,7 @@
     "dependencies": {
         "@cloudscape-design/chat-components": "^1.0.94",
         "@cloudscape-design/code-view": "^3.0.100",
-        "@cloudscape-design/components": "^3.0.1196",
+        "@cloudscape-design/components": "^3.0.1203",
         "@cloudscape-design/global-styles": "^1.0.50",
         "aws-amplify": "^6.16.2",
         "aws4fetch": "^1.0.20",
