@@ -18,7 +18,7 @@
         "@cloudscape-design/global-styles": "^1.0.50",
         "aws-amplify": "^6.16.2",
         "aws4fetch": "^1.0.20",
-        "jspdf": "^4.1.0",
+        "jspdf": "^4.2.0",
         "markdown-to-jsx": "^7.7.17",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
