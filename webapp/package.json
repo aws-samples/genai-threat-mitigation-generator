@@ -12,9 +12,9 @@
         "test": "vitest"
     },
     "dependencies": {
-        "@cloudscape-design/chat-components": "^1.0.140",
-        "@cloudscape-design/code-view": "^3.0.142",
-        "@cloudscape-design/components": "^3.0.1311",
+        "@cloudscape-design/chat-components": "^1.0.142",
+        "@cloudscape-design/code-view": "^3.0.144",
+        "@cloudscape-design/components": "^3.0.1314",
         "@cloudscape-design/global-styles": "^1.0.60",
         "aws-amplify": "^6.18.0",
         "aws4fetch": "^1.0.20",
