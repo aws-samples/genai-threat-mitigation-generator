@@ -12,11 +12,11 @@
         "test": "vitest"
     },
     "dependencies": {
-        "@cloudscape-design/chat-components": "^1.0.151",
-        "@cloudscape-design/code-view": "^3.0.155",
-        "@cloudscape-design/components": "^3.0.1330",
-        "@cloudscape-design/global-styles": "^1.0.62",
-        "aws-amplify": "^6.18.0",
+        "@cloudscape-design/chat-components": "^1.0.154",
+        "@cloudscape-design/code-view": "^3.0.159",
+        "@cloudscape-design/components": "^3.0.1334",
+        "@cloudscape-design/global-styles": "^1.0.63",
+        "aws-amplify": "^6.19.0",
         "aws4fetch": "^1.0.20",
         "jspdf": "^4.2.1",
         "markdown-to-jsx": "^7.7.17",
