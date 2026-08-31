@@ -12,9 +12,9 @@
         "test": "vitest"
     },
     "dependencies": {
-        "@cloudscape-design/chat-components": "^1.0.162",
-        "@cloudscape-design/code-view": "^3.0.168",
-        "@cloudscape-design/components": "^3.0.1350",
+        "@cloudscape-design/chat-components": "^1.0.165",
+        "@cloudscape-design/code-view": "^3.0.171",
+        "@cloudscape-design/components": "^3.0.1356",
         "@cloudscape-design/global-styles": "^1.0.67",
         "aws-amplify": "^6.20.0",
         "aws4fetch": "^1.0.20",
@@ -22,7 +22,7 @@
         "markdown-to-jsx": "^7.7.17",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "react-router-dom": "^7.18.2"
+        "react-router-dom": "^7.18.3"
     },
     "devDependencies": {
         "@testing-library/jest-dom": "^5.17.0",
