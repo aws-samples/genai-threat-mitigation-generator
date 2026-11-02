@@ -12,17 +12,17 @@
         "test": "vitest"
     },
     "dependencies": {
-        "@cloudscape-design/chat-components": "^1.0.177",
-        "@cloudscape-design/code-view": "^3.0.185",
-        "@cloudscape-design/components": "^3.0.1391",
+        "@cloudscape-design/chat-components": "^1.0.185",
+        "@cloudscape-design/code-view": "^3.0.191",
+        "@cloudscape-design/components": "^3.0.1407",
         "@cloudscape-design/global-styles": "^1.0.71",
-        "aws-amplify": "^6.22.1",
+        "aws-amplify": "^6.22.2",
         "aws4fetch": "^1.0.20",
         "jspdf": "^4.2.1",
         "markdown-to-jsx": "^7.7.17",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "react-router-dom": "^7.18.4"
+        "react-router-dom": "^7.18.5"
     },
     "devDependencies": {
         "@testing-library/jest-dom": "^5.17.0",
